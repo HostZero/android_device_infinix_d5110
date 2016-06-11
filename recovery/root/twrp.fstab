@@ -1,7 +1,8 @@
-/system       ext4          /dev/block/platform/mtk-msdc.0/by-name/system
-/data         ext4          /dev/block/platform/mtk-msdc.0/by-name/userdata   length=-16384
-/cache        ext4          /dev/block/platform/mtk-msdc.0/by-name/cache
-/boot         emmc          /dev/block/platform/mtk-msdc.0/by-name/boot
-/recovery     emmc          /dev/block/platform/mtk-msdc.0/by-name/recovery
-/nvram        ext4          /dev/block/platform/mtk-msdc.0/by-name/nvram      flags=display="IMEI/NVRAM"
+/system       ext4          /dev/block/mmcblk0p18
+/data         ext4          /dev/block/mmcblk0p20   length=-16384
+/cache        ext4          /dev/block/mmcblk0p19
+/boot         emmc          /dev/block/mmcblk0p7
+/recovery     emmc          /dev/block/mmcblk0p8
+/oem          ext4          /dev/block/mmcblk0p10     flags=display="OEM
+/nvram        ext4          /dev/block/mmcblk0p2      flags=display="IMEI/NVRAM"
 /usb_otg      auto          /dev/block/sda1 /dev/block/sda                    flags=display="USB-OTG";storage;wipeingui;removable
